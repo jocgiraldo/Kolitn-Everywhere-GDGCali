@@ -79,22 +79,12 @@
         <span class="android-mobile-title mdl-layout-title">
           <img class="android-logo-image" src="images/gdgcali-logo.png">
         </span>
-        <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect"
-          id="more-button">
-          <i class="material-icons">more_vert</i>
-        </button>
-        <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
-          <li class="mdl-menu__item">5.0 Lollipop</li>
-          <li class="mdl-menu__item">4.4 KitKat</li>
-          <li disabled class="mdl-menu__item">4.3 Jelly Bean</li>
-          <li class="mdl-menu__item">Android History</li>
-        </ul>
       </div>
     </div>
 
     <div class="android-drawer mdl-layout__drawer">
       <span class="mdl-layout-title">
-        
+
       </span>
       <img class="android-logo-image" src="images/gdgcali-logo.png">
       <nav class="mdl-navigation">
@@ -262,111 +252,185 @@
           <div class="android-wear-band-text">
             <div class="mdl-typography--display-2 mdl-typography--font-thin">¿Que es Kotlin Everywhere?</div>
             <p class="mdl-typography--headline mdl-typography--font-thin">
-              Android works perfectly with your favourite apps like Google Maps,
-              Calendar and YouTube.
+              Es un evento dirigido por la comunidad GDG Cali, donde puedes aprender lo esencial y las mejores prácticas
+              de Kotlin en Android, Google Cloud Platform y el desarrollo multiplataforma.
             </p>
             <p>
               <a class="mdl-typography--font-regular mdl-typography--text-uppercase android-alt-link" href="">
-                See what's new in the Play Store&nbsp;<i class="material-icons">chevron_right</i>
+                Conoce mas del GDG Cali&nbsp;<i class="material-icons">chevron_right</i>
               </a>
             </p>
           </div>
         </div>
       </div>
-      <div class="android-customized-section">
-        <div class="android-customized-section-text">
-          <div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">Customised by you, for you
+      <div class="android-agenda-section">
+        <div class="android-section-title mdl-typography--display-1-color-contrast">Agenda</div>
+        <div class="switcher-content _is-active" data-id="day1">
+          <div class="mktoText" id="agendaTabContent1">
+            <div class="agenda">
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">09:00 - 09:30</div>
+                <div class="g-col-9 _md-12 agenda__td agenda__td_center">
+                  <h3 class="agenda__subtitle">Registration</h3>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">09:30 - 10:30</div>
+                <div class="g-col-9 _md-12 agenda__td">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Keynote (Kotlin/Anywhere)</h3>
+                  <p class="agenda__speaker">Hadi Hariri</p>
+                  <p>With Kotlin targeting the JVM, Android, and JavaScript, and with Kotlin/Native targeting other
+                    platforms such as iOS, macOS, Windows, and Linux, the possibility of targeting multiple platforms
+                    with a single project is now a reality. In this talk, we’re going to cover how you can create
+                    multi-platform projects with Kotlin, what is provided from the language, and what is available with
+                    libraries.</p>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">10:30 - 11:00</div>
+                <div class="g-col-9 _md-12 agenda__td agenda__td_center">
+                  <h3 class="agenda__subtitle">Break</h3>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">11:00 - 12:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Kotlin: Multi-platform</h3>
+                  <p class="agenda__speaker">Amrit Sanjeev</p>
+                  <div class="label"><span class="label__item">Track 1</span></div>
+                  <p>Learn how you can share parts of your app between mobile platforms (and even the web!) without
+                    compromising quality, and delivering a best in class Android experience. During this talk we'll talk
+                    about some ideas on how to structure not only your code, but also your teams, I'll show how to
+                    implement your own Kotlin MP libraries and showcase a few ones that you can use out-of-the-box.</p>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">11:00 - 12:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Kotlin DSL - let’s express code in
+                    "mini-language"</h3>
+                  <p class="agenda__speaker">Adit Lal</p>
+                  <div class="label"><span class="label__item">Track 2</span></div>
+                  <p>Easy to read and simple to debug code is more within reach today than ever. DSL (Domain specific
+                    language) though around for quite some time, it has gained more momentum in the recent times with
+                    Kotlin - which provides some powerful language features giving us the advantage of building internal
+                    DSLs.<br> This talk introduces and highlights how we could use Kotlin DSL’s and add to the
+                    readability of code by enforcing the use of declarative code with minimal boilerplate, as well as
+                    look at why Kotlin is particularly good for DSLs with examples.</p>
+                  <ul>
+                    <li>Why DSLs<br>General-purpose languages vs. DSLs Usage of DSLs - Examples of how to use DSLs</li>
+                    <li>Why Kotlin<br>Being built on top of the core language, Kotlin DSL is considered as an Internal
+                      DSL which means that it does not have a syntax on its own, rather it is a library that offers DSL
+                      readability by exploiting the language features, in this case, Kotlin.</li>
+                    <li>What we will cover<br>We will go over some examples of how to build DSL with a few use cases.
+                    </li>
+                    <li>Kotlin specific features for DSL</li>
+                    <li>DSL’s in android code</li>
+                    <li>Grade script DSL’s</li>
+                  </ul>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">11:00 - 12:00</div>
+                <div class="g-col-3 _md-12 agenda__td">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Build your first Android app in Kotlin
+                  </h3>
+                  <p class="agenda__speaker"><br></p>
+                  <div class="label"><span class="label__item">CodeLabs</span></div>
+                  <p><br></p>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">12:00 - 13:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Server-Side Development with Ktor</h3>
+                  <p class="agenda__speaker">Hadi Hariri</p>
+                  <div class="label"><span class="label__item">Track 1</span></div>
+                  <p><br></p>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">12:00 - 13:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Building cross-platform libraries with
+                    Kotlin</h3>
+                  <p class="agenda__speaker">Gopalkrishna P Sharma</p>
+                  <div class="label"><span class="label__item">Track 2</span></div>
+                  <p>The introduction of Kotlin Multiplatform has dramatically opened up possible uses of Kotlin. One
+                    possibility is to share code between iOS, Android, and Server. This talk is about my experience with
+                    building Kotlin Multiplatform libraries. My hope is to allow the audience to decide if Kotlin
+                    Multiplatform, as it stands today, would be a good fit for their apps.<br> I will first talk about
+                    how I built a library that implements a reasonably complex algorithm, without dependencies in a
+                    relatively quick and painless manner.<br> Next, using the KotlinConf app as an example, I'll
+                    illustrate how you can share significant portions of your business logic between iOS and Android.
+                    I'll also point out a few pitfalls along the way.</p>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">12:00 - 13:00</div>
+                <div class="g-col-3 _md-12 agenda__td">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Kotlin Coroutines</h3>
+                  <p class="agenda__speaker">Amrit Sanjeev</p>
+                  <div class="label"><span class="label__item">CodeLabs</span></div>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">13:00 - 14:00</div>
+                <div class="g-col-9 _md-12 agenda__td agenda__td_center">
+                  <h3 class="agenda__subtitle">Lunch</h3>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">14:00 - 15:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Leveraging sealed classes in Kotlin</h3>
+                  <p class="agenda__speaker">Sanchita Agarwal</p>
+                  <div class="label"><span class="label__item">Track 1</span></div>
+                  <p><br></p>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">14:00 - 15:00</div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_border_right">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Jetpack Compose — Next Gen Kotlin UI
+                    Toolkit for Android</h3>
+                  <p class="agenda__speaker">Ragunath Jawahar</p>
+                  <div class="label"><span class="label__item">Track 2</span></div>
+                  <p>The Android UI toolkit's API surface has remained the same for the past decade. With applications
+                    and UI becoming more and more demanding, we need a new programming model to handle this complexity.
+                    With Kotlin bringing in DSLs, functional programming, and compiler plugin capabilities - the Android
+                    UI Toolkit team is taking a new direction with Jetpack Compose.</p>
+                  <p>This shift in API design also demands a shift in thinking about UI and app architecture. In this
+                    talk, we’ll see how Jetpack Compose is radically different from the existing Android UI framework
+                    and look at various examples to build reactive Android apps.<br></p>
+                </div>
+                <div class="g-col-3 _md-12 agenda__td agenda__td_hidden">14:00 - 15:00</div>
+                <div class="g-col-3 _md-12 agenda__td">
+                  <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Run a Spring Boot application on Google
+                    Compute Engine</h3>
+                  <p class="agenda__speaker"><br></p>
+                  <div class="label"><span class="label__item">CodeLabs</span></div>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">15:00 - 15:30</div>
+                <div class="g-col-9 _md-12 agenda__td agenda__td_center">
+                  <h3 class="agenda__subtitle">Break</h3>
+                </div>
+              </div>
+              <div class="g-row agenda__row">
+                <div class="g-col-3 _md-12 agenda__td">15:30 - 16:00</div>
+                <div class="g-col-9 _md-12 agenda__td agenda__td_center">
+                  <div class="g-row">
+                    <div class="g-col">
+                      <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Closing Note</h3>
+                      <p class="agenda__speaker">Hadi Hariri</p>
+                    </div>
+                    <div class="g-col">
+                      <h3 class="agenda__subtitle agenda__subtitle_margin_bottom">Quiz Competition</h3>
+                      <p class="agenda__speaker">Javed Mohamed</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p class="mdl-typography--font-light">
-            Put the stuff that you care about right on your home screen: the latest news, the weather or a stream of
-            your recent photos.
-            <br>
-            <a href="" class="android-link mdl-typography--font-light">Customise your phone</a>
-          </p>
         </div>
-        <div class="android-customized-section-image"></div>
       </div>
-      <div class="android-more-section">
-        <div class="android-section-title mdl-typography--display-1-color-contrast">More from Android</div>
-        <div class="android-card-container mdl-grid">
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__media">
-              <img src="images/more-from-1.png">
-            </div>
-            <div class="mdl-card__title">
-              <h4 class="mdl-card__title-text">Get going on Android</h4>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <span class="mdl-typography--font-light mdl-typography--subhead">Four tips to make your switch to Android
-                quick and easy</span>
-            </div>
-            <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                Make the switch
-                <i class="material-icons">chevron_right</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__media">
-              <img src="images/more-from-4.png">
-            </div>
-            <div class="mdl-card__title">
-              <h4 class="mdl-card__title-text">Create your own Android character</h4>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <span class="mdl-typography--font-light mdl-typography--subhead">Turn the little green Android mascot into
-                you, your friends, anyone!</span>
-            </div>
-            <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                androidify.com
-                <i class="material-icons">chevron_right</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__media">
-              <img src="images/more-from-2.png">
-            </div>
-            <div class="mdl-card__title">
-              <h4 class="mdl-card__title-text">Get a clean customisable home screen</h4>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <span class="mdl-typography--font-light mdl-typography--subhead">A clean, simple, customisable home screen
-                that comes with the power of Google Now: Traffic alerts, weather and much more, just a swipe
-                away.</span>
-            </div>
-            <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                Download now
-                <i class="material-icons">chevron_right</i>
-              </a>
-            </div>
-          </div>
-
-          <div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-            <div class="mdl-card__media">
-              <img src="images/more-from-3.png">
-            </div>
-            <div class="mdl-card__title">
-              <h4 class="mdl-card__title-text">Millions to choose from</h4>
-            </div>
-            <div class="mdl-card__supporting-text">
-              <span class="mdl-typography--font-light mdl-typography--subhead">Hail a taxi, find a recipe, run through a
-                temple – Google Play has all the apps and games that let you make your Android device uniquely
-                yours.</span>
-            </div>
-            <div class="mdl-card__actions">
-              <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="">
-                Find apps
-                <i class="material-icons">chevron_right</i>
-              </a>
-            </div>
-          </div>
-        </div>
+      <div class="android-map-section">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.7808765305745!2d-76.55029038467315!3d3.4035520524837746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a1556cdd4199%3A0x6a8e395d9abdf629!2sUniversidad+Santiago+De+Cali!5e0!3m2!1ses!2sco!4v1559142927840!5m2!1ses!2sco"
+          width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
       </div>
 
       <footer class="android-footer mdl-mega-footer">
